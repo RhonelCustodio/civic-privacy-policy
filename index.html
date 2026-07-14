@@ -242,23 +242,23 @@
 
   <!-- small script to simulate back navigation (non-module, in-page) -->
   <script>
-    (function() {
-      // If the page was opened via window.open, the back button attempts to close;
-      // otherwise fallback to history back. This keeps UX friendly.
-      const backBtn = document.querySelector('a.btn-return');
-      if (backBtn) {
-        backBtn.addEventListener('click', function(e) {
-          e.preventDefault();
-          if (window.opener && !window.opener.closed) {
-            // If opened from resident hub, try to close this tab
-            window.close();
-          } else {
-            // Otherwise go back in history
-            window.history.back();
-          }
-        });
-      }
-    })();
+    // (function() {
+    //   // If the page was opened via window.open, the back button attempts to close;
+    //   // otherwise fallback to history back. This keeps UX friendly.
+    //   const backBtn = document.querySelector('a.btn-return');
+    //   if (backBtn) {
+    //     backBtn.addEventListener('click', function(e) {
+    //       e.preventDefault();
+    //       if (window.opener && !window.opener.closed) {
+    //         // If opened from resident hub, try to close this tab
+    //         window.close();
+    //       } else {
+    //         // Otherwise go back in history
+    //         window.history.back();
+    //       }
+    //     });
+    //   }
+    // })();
     // Disable right-click context menu
   document.addEventListener('contextmenu', event => event.preventDefault());
 
