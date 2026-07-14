@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" oncontectmenu="return false;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>OneVictoria · Privacy Policy</title>
+  <!-- Tailwind & shared design tokens (mirrored from Resident Hub) -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            tsu: {
+              blue: '#0A2947', blueLight: '#0D3B5C', blueDark: '#061B2E',
+              gold: '#FFD700', goldLight: '#FFE44D', goldDark: '#CCAC00',
+              dark: '#2B0000', light: '#E8F0FE', accent: '#1A5276', muted: '#94A3B8',
+            },
+            surface: { DEFAULT: '#FFFFFF', alt: '#F8FAFC', hover: '#F1F5F9', border: '#E2E8F0' },
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Font Awesome 6 (consistent icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts Inter (matching resident hub) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+    body {
+      background: #f8fafc;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    /* subtle scrollbar (consistent) */
+    ::-webkit-scrollbar { width: 7px; height: 7px; }
+    ::-webkit-scrollbar-track { background: #f1f5f9; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+    .glass-card {
+      background: rgba(255,255,255,0.9);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(10,41,71,0.08);
+      box-shadow: 0 15px 35px rgba(10,41,71,0.08);
+    }
+    .policy-content h2 {
+      color: #0A2947;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+      border-left: 4px solid #FFD700;
+      padding-left: 1rem;
+    }
+    .policy-content p, .policy-content li {
+      color: #1e293b;
+      line-height: 1.7;
+    }
+    .btn-return {
+      background: linear-gradient(135deg, #0A2947 0%, #1A5276 100%);
+      color: #FFD700;
+      font-weight: 700;
+      border-radius: 14px;
+      padding: 12px 26px;
+      box-shadow: 0 8px 18px rgba(10,41,71,0.25);
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn-return:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px rgba(10,41,71,0.35);
+      background: linear-gradient(135deg, #0D3B5C 0%, #1A5276 100%);
+      color: #FFE44D;
+    }
+    footer {
+      margin-top: auto;
+    }
+    .header-logo {
+      background: linear-gradient(135deg, #0A2947 0%, #0D3B5C 100%);
+      border-radius: 16px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body class="antialiased text-gray-800">
+
+  <!-- Main container with consistent padding -->
+  <div class="max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 py-8 lg:py-12 w-full">
+    
+    <!-- Header with OneVictoria brand identity -->
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5 mb-10">
+      <div class="flex items-center gap-4">
+        <div class="header-logo w-12 h-12 flex items-center justify-center">
+          <i class="fa-solid fa-building-columns text-tsu-gold text-xl"></i>
+        </div>
+        <div>
+          <h1 class="text-3xl sm:text-4xl font-black text-tsu-blue tracking-tight">OneVictoria</h1>
+          <p class="text-sm text-tsu-accent/80 font-medium mt-0.5">Municipality of Victoria · Resident Hub</p>
+        </div>
+      </div>
+      <a href="#" onclick="window.close(); return false;" class="btn-return self-start sm:self-center">
+        <i class="fa-solid fa-arrow-left text-xs"></i> Back to Portal
+      </a>
+    </div>
+
+    <!-- Glassmorphism card for privacy content -->
+    <div class="glass-card rounded-3xl p-6 sm:p-8 lg:p-10 policy-content">
+      <div class="flex items-center gap-3 mb-6 border-b border-gray-200 pb-4">
+        <i class="fa-solid fa-shield-halved text-tsu-gold text-3xl"></i>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-tsu-blue m-0 border-0 pl-0">Privacy Policy</h2>
+      </div>
+      
+      <p class="text-sm text-gray-500 mb-8">Effective Date: <strong>January 1, 2026</strong> · Last Updated: <strong>July 5, 2026</strong></p>
+      
+      <div class="space-y-7 text-base">
+        <!-- Introduction -->
+        <div>
+          <h2 class="text-xl font-bold mb-3 flex items-center gap-2"><i class="fa-solid fa-info-circle text-tsu-gold text-sm"></i>1. Introduction</h2>
+          <p>Welcome to OneVictoria, the official Resident Hub of the Municipality of Victoria. Your privacy is fundamental to our mission of transparent and trustworthy governance. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you access our digital services, including account registration, event participation, volunteer applications, and donation transactions.</p>
+          <p class="mt-2">By using OneVictoria, you consent to the practices described in this policy. We adhere to the Data Privacy Act of 2012 (Republic Act No. 10173) of the Philippines and other relevant local ordinances.</p>
+        </div>
+
+        <!-- Information We Collect -->
+        <div>
+          <h2 class="text-xl font-bold mb-3 flex items-center gap-2"><i class="fa-solid fa-database text-tsu-gold text-sm"></i>2. Information We Collect</h2>
+          <p class="font-semibold text-tsu-blue">We may collect the following types of information:</p>
+          <ul class="list-disc list-inside mt-2 space-y-2 text-gray-700">
+            <li><strong>Personal Identification Information:</strong> Full name, email address, phone number, age, gender, and residential address provided during account creation or profile updates.</li>
+            <li><strong>Service-Related Data:</strong> Volunteer skills, availability, uploaded skill verification documents, service hours records, and event registrations.</li>
+            <li><strong>Donation Records:</strong> Donation amounts, purpose, payment method references (GCash, PayMaya, bank transfer), and donor names (if different from account holder).</li>
+            <li><strong>Technical & Usage Data:</strong> IP address, browser type, device information, and interaction logs within the Resident Hub for security and analytics.</li>
+            <li><strong>Communications:</strong> Messages, feedback, or inquiries you send to municipal staff through the platform.</li>
+          </ul>
+        </div>
+
+        <!-- How We Use Information -->
+        <div>
+          <h2 class="text-xl font-bold mb-3 flex items-center gap-2"><i class="fa-solid fa-gear text-tsu-gold text-sm"></i>3. How We Use Your Information</h2>
+          <p>Your data is used strictly for legitimate municipal purposes and to improve community services:</p>
+          <ul class="list-disc list-inside mt-2 space-y-2 text-gray-700">
+            <li>To create and manage your resident account, verify identity, and provide secure access to the hub.</li>
+            <li>To process event registrations, volunteer applications, and track community service hours.</li>
+            <li>To facilitate donations, generate receipts, and maintain transparent public donation logs (donor names may be displayed with consent).</li>
+            <li>To send important notifications regarding your activities, announcements, emergency alerts, and policy updates.</li>
+            <li>To improve platform security, debug issues, and analyze aggregated usage trends for better municipal planning.</li>
+            <li>To comply with legal obligations and respond to lawful requests from government authorities.</li>
+          </ul>
+        </div>
+
+        <!-- Data Sharing & Disclosure -->
+        <div>
+          <h2 class="text-xl font-bold mb-3 flex items-center gap-2"><i class="fa-solid fa-share-nodes text-tsu-gold text-sm"></i>4. Data Sharing & Disclosure</h2>
+          <p>We do not sell, rent, or trade your personal information. We may share data only in the following limited circumstances:</p>
+          <ul class="list-disc list-inside mt-2 space-y-2 text-gray-700">
+            <li><strong>Municipal Departments:</strong> Authorized personnel from the Mayor's Office, Social Welfare, Disaster Risk Reduction, and other relevant local government units to coordinate community programs.</li>
+            <li><strong>Service Providers:</strong> Trusted third-party vendors (e.g., cloud hosting, payment gateways) who are contractually bound to protect your data and use it solely for designated services.</li>
+            <li><strong>Legal Compliance:</strong> When required by law, court order, or to protect the rights, property, or safety of the Municipality of Victoria, its residents, or the public.</li>
+            <li><strong>Public Donor Acknowledgment:</strong> With your explicit consent, your name and donation details may appear in public gratitude lists. Otherwise, donations remain anonymous by default.</li>
+          </ul>
+        </div>
+
+        <!-- Data Security -->
+        <div>
+          <h2 class="text-xl font-bold mb-3 flex items-center gap-2"><i class="fa-solid fa-lock text-tsu-gold text-sm"></i>5. Data Security</h2>
+          <p>We implement robust administrative, technical, and physical safeguards to protect your personal information against unauthorized access, alteration, disclosure, or destruction. These measures include encryption in transit (SSL/TLS), secure server infrastructure, role-based access controls, and regular security audits.</p>
+          <p class="mt-2">Despite our efforts, no method of electronic storage is 100% secure. We continuously monitor and update our practices to align with industry standards and government regulations.</p>
+        </div>
+
+        <!-- Data Retention -->
+        <div>
+          <h2 class="text-xl font-bold mb-3 flex items-center gap-2"><i class="fa-solid fa-clock-rotate-left text-tsu-gold text-sm"></i>6. Data Retention</h2>
+          <p>We retain your personal information only for as long as necessary to fulfill the purposes outlined in this policy, or as required by Philippine law. Account data is kept while your resident profile is active. Upon account deactivation or request for deletion, we will securely dispose of your data within a reasonable timeframe, unless retention is mandated for legal, auditing, or archival public interest purposes.</p>
+        </div>
+
+        <!-- Your Rights -->
+        <div>
+          <h2 class="text-xl font-bold mb-3 flex items-center gap-2"><i class="fa-solid fa-user-check text-tsu-gold text-sm"></i>7. Your Rights</h2>
+          <p>Under the Data Privacy Act, you have the right to:</p>
+          <ul class="list-disc list-inside mt-2 space-y-2 text-gray-700">
+            <li>Access your personal data and request a copy of information we hold.</li>
+            <li>Rectify any inaccurate or incomplete personal data.</li>
+            <li>Object to processing or withdraw consent for specific uses (e.g., marketing communications).</li>
+            <li>Request erasure or blocking of your data under certain conditions.</li>
+            <li>File a complaint with the National Privacy Commission (NPC) if you believe your rights have been violated.</li>
+          </ul>
+          <p class="mt-2">To exercise these rights, contact our Data Protection Officer using the details in Section 9. We will respond within the period prescribed by law.</p>
+        </div>
+
+        <!-- Cookies & Tracking -->
+        <div>
+          <h2 class="text-xl font-bold mb-3 flex items-center gap-2"><i class="fa-solid fa-cookie-bite text-tsu-gold text-sm"></i>8. Cookies & Tracking Technologies</h2>
+          <p>OneVictoria uses essential cookies and similar technologies to maintain session integrity, remember preferences, and enhance user experience. We do not use third-party advertising cookies. You can control cookie settings through your browser; however, disabling essential cookies may affect platform functionality.</p>
+        </div>
+
+        <!-- Contact & DPO -->
+        <div>
+          <h2 class="text-xl font-bold mb-3 flex items-center gap-2"><i class="fa-solid fa-address-book text-tsu-gold text-sm"></i>9. Contact Information</h2>
+          <p>For questions, concerns, or to exercise your data privacy rights, please contact:</p>
+          <div class="bg-tsu-light/30 p-5 rounded-xl mt-3 border border-tsu-blue/10">
+            <p class="font-bold text-tsu-blue text-lg">Municipality of Victoria – Data Protection Officer</p>
+            <p class="flex items-center gap-2 mt-1"><i class="fa-solid fa-map-pin w-5 text-tsu-accent"></i> Municipal Hall, Victoria, Tarlac, Philippines</p>
+            <p class="flex items-center gap-2"><i class="fa-solid fa-envelope w-5 text-tsu-accent"></i> dpo@victoria.gov.ph</p>
+            <p class="flex items-center gap-2"><i class="fa-solid fa-phone w-5 text-tsu-accent"></i> (045) 123-4567 local 102</p>
+          </div>
+        </div>
+
+        <!-- Policy Updates -->
+        <div>
+          <h2 class="text-xl font-bold mb-3 flex items-center gap-2"><i class="fa-solid fa-pen-to-square text-tsu-gold text-sm"></i>10. Changes to This Policy</h2>
+          <p>We may update this Privacy Policy periodically to reflect changes in our practices or legal requirements. We will notify registered residents via the OneVictoria notification system and post the revised version with a new effective date. Continued use of the platform after changes constitutes acceptance of the updated policy.</p>
+        </div>
+      </div>
+
+      <!-- Footer confirmation -->
+      <div class="mt-10 pt-6 border-t border-gray-200 text-center text-sm text-gray-500">
+        <i class="fa-solid fa-shield-check text-tsu-blue mr-1"></i> Your trust is the foundation of our community.
+      </div>
+    </div>
+
+    <!-- Footer (matching resident hub style) -->
+    <footer class="mt-10 pt-6 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-3">
+      <p>&copy; 2026 Municipality of Victoria. All rights reserved.</p>
+      <div class="flex space-x-5 font-medium">
+        <a href="#" class="hover:text-tsu-blue transition-colors">Privacy</a>
+        <a href="#" class="hover:text-tsu-blue transition-colors">Terms</a>
+        <a href="#" class="hover:text-tsu-blue transition-colors">Contact</a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- small script to simulate back navigation (non-module, in-page) -->
+  <script>
+    (function() {
+      // If the page was opened via window.open, the back button attempts to close;
+      // otherwise fallback to history back. This keeps UX friendly.
+      const backBtn = document.querySelector('a.btn-return');
+      if (backBtn) {
+        backBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          if (window.opener && !window.opener.closed) {
+            // If opened from resident hub, try to close this tab
+            window.close();
+          } else {
+            // Otherwise go back in history
+            window.history.back();
+          }
+        });
+      }
+    })();
+    // Disable right-click context menu
+  document.addEventListener('contextmenu', event => event.preventDefault());
+
+  // Disable specific keyboard shortcuts
+  document.addEventListener('keydown', event => {
+    // Block F12
+    if (event.keyCode === 123) {
+      event.preventDefault();
+      alert('FORBIDDEN!');
+      return false;
+    }
+    
+    // Block Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C
+    if (event.ctrlKey && event.shiftKey && (event.keyCode === 73 || event.keyCode === 74 || event.keyCode === 67)) {
+      event.preventDefault();
+      alert('FORBIDDEN!');
+      return false;
+    }
+    
+    // Block Ctrl+U (View Source)
+    if (event.ctrlKey && event.keyCode === 85) {
+      event.preventDefault();
+      alert('FORBIDDEN!');
+      return false;
+    }
+  });
+  </script>
+</body>
+</html>
